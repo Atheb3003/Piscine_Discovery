@@ -1,0 +1,55 @@
+.iconos
+{
+    height: 25px;
+    width: 25px;
+}
+.iconos1
+{
+    height: 29px;
+    width: 29px;
+
+}
+table
+{
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border-collapse: collapse;
+}
+.imagen
+{
+    border-collapse: collapse;
+    border-bottom: 1px black solid;
+    height: fit-content;
+    max-height: 30vh;
+    background-color: white;
+}
+.borde
+{
+    border-style: solid;
+    border-color: black;
+    border-collapse: collapse;
+    background-color: bisque;
+    -webkit-box-shadow: 11px 15px 33px -4px rgba(0,0,0,0.87);
+    -moz-box-shadow: 11px 15px 33px -4px rgba(0,0,0,0.87);
+    box-shadow: 11px 15px 33px -4px rgba(0,0,0,0.87);
+}
+.boton
+{
+    width: 90%;
+    margin: 10px;
+}
+.login
+{
+    font-family: 'Nunito Sans', sans-serif;
+}
+.estudiante
+{
+    margin-bottom: 10px ;
+}
+.prese
+{
+    font-family: Arial, Helvetica, sans-serif;
+}

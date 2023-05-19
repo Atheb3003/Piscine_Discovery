@@ -1,0 +1,55 @@
+html, body
+{
+    margin: 0%;
+    background-color: black;
+    color: rgb(0, 0, 0);
+    height: 100%;
+}
+.imagen1
+{
+    background-image: url("https://www.xtrafondos.com/wallpapers/dos-ping-inos-4885.jpg") ;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    text-align: center;
+    height: 100vh;
+    filter: grayscale();
+}
+.imagen2
+{
+    background-image: url("https://www.xtrafondos.com/wallpapers/resized/rana-amarilla-4889.jpg?s=large");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    text-align: center;
+    height: 100vh;
+    filter:grayscale();
+}
+.textodiv1
+{ 
+    text-align: center;
+    position: relative;
+    top: 50%;
+    font-family: 'Nunito Sans', sans-serif;
+    font-size:10ch;
+}
+.textodiv2
+{
+    text-align: center;
+    position: relative;
+    top: 50%;
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: 10ch;
+    color:azure;
+}
+.texto-espacio
+{
+    color: rgb(255, 255, 255);
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: 10ch;
+}

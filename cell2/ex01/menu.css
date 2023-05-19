@@ -1,0 +1,17 @@
+html, body
+{
+    background-image: url(https://st3.depositphotos.com/4857279/18007/v/450/depositphotos_180074570-stock-illustration-sitemap-vector-icon-illustration.jpg);
+    width: 100hv;
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: xx-large;
+}
+.banda
+{
+    background-color: rgba(255, 255, 255, 0.946);
+    width: 1000px;
+    height: 100px;
+    display: flex; /* Esto  hace que el contenido del div se coloque centrado en este */
+    justify-content: center;
+    align-items: center;
+    border-radius: 300px;
+}

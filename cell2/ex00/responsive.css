@@ -1,0 +1,21 @@
+    html, body
+    {
+        height: 100%;
+        width: 100%;
+    }
+    table, td
+    {
+        height: 100%;
+        width: 100%;
+        background-color: aqua;
+        border-style: solid;
+        border-collapse: collapse;
+    }
+    .a
+    {
+        background-color: bisque;
+    }
+    .b
+    {
+        background-color: blanchedalmond;
+    }

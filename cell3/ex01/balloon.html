@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Balloon</title>
+    <style>
+        #ballon
+        {
+            height: 200px;
+            width: 200px;
+            background-color: red;
+            border-radius: 100%;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: absolute;
+        }
+
+    </style>
+    <script>
+
+        const r_btn = document.getElementById('reload_btn');
+
+        function clickChange()
+        {
+            var id = document.getElementById("ballon");
+            var colorActual = window.getComputedStyle(id).backgroundColor;
+            
+
+            if(colorActual === "rgb(255, 0, 0)")
+            {
+                document.getElementById("ballon").style.backgroundColor = "green";
+                colorActual = "rgb (0, 128, 0)";
+            }
+            else if(colorActual === "rgb(0, 128, 0)")
+            {
+                document.getElementById("ball<on").style.backgroundColor = "blue";
+                colorActual = "rgb (0, 0, 255)";
+            }
+            else if(colorActual === "rgb(0, 0, 255)")
+            {
+                document.getElementById("ballon").style.backgroundColor = "red";
+                colorActual = "rgb (255, 0, 0)";
+            }
+            
+            var sizeActual = window.getComputedStyle(id).width;
+            if (parseInt(sizeActual) <= 420)
+            {
+                document.getElementById("ballon").style.width = parseInt(sizeActual)+10 +"px";
+                sizeActual = parseInt(sizeActual)+10 + "px";
+                document.getElementById("ballon").style.height = parseInt(sizeActual)+10 +"px";
+                sizeActual = parseInt(sizeActual)+10 + "px";
+            }
+            console.log(sizeActual);
+            if (parseInt(sizeActual) >= 420)
+            {
+                document.getElementById("ballon").style.width = parseInt(sizeActual)- 220 +"px";
+                sizeActual = parseInt(sizeActual)- 220 + "px";
+                document.getElementById("ballon").style.height = parseInt(sizeActual)+10 +"px";
+                sizeActual = parseInt(sizeActual)+10 + "px";
+            }
+        }
+
+        function makeSmall()
+        {
+            var id = document.getElementById("ballon");
+            var sizeActual = window.getComputedStyle(id).width;
+            var colorActual = window.getComputedStyle(id).backgroundColor;
+
+          if (parseInt(sizeActual) > 200)
+            {
+                document.getElementById("ballon").style.width = parseInt(sizeActual)-5 +"px";
+                sizeActual = parseInt(sizeActual)-5 + "px";
+                document.getElementById("ballon").style.height = parseInt(sizeActual)-5 +"px";
+                sizeActual = parseInt(sizeActual)-5 + "px";
+
+                if(colorActual === "rgb(255, 0, 0)")
+                {
+                     document.getElementById("ballon").style.backgroundColor = "blue";
+                    colorActual = "rgb (0, 0, 255)";
+                }
+            else if(colorActual === "rgb(0, 0, 255)") 
+            {
+                document.getElementById("ballon").style.backgroundColor = "green";
+                colorActual = "rgb (0, 128, 0)";
+            }
+            else if(colorActual === "rgb(0, 128, 0)")
+            {
+                document.getElementById("ballon").style.backgroundColor = "red";
+                colorActual = "rgb (255, 0, 0)";
+            }
+                
+            }
+        }
+    </script>
+
+</head>
+<body>
+    <div id="ballon" onclick="clickChange()" onmouseleave="makeSmall()">
+    </div>
+</body>
+</html>

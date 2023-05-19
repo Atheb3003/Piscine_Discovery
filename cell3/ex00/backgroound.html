@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>backgroound</title>
+    <script>
+        function myFunction() /* Aquí declaro una funcion */
+        {
+            var RR = Math.floor(Math.random()*256)
+            var GG = Math.floor(Math.random()*256)
+            var BB = Math.floor(Math.random()*256)
+            document.body.style.backgroundColor=`rgb(${RR},${GG},${BB}`
+        }
+    </script>
+</head>
+<body>
+    <button onclick="myFunction()"> <!-- Aqui estoy llamando a la funcion y le digo que cuando la clicke que me la ejecute -->
+        click Me pls
+    </button>
+</body>
+</html>
